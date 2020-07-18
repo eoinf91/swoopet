@@ -1,0 +1,322 @@
+@import 'colors.styles.scss';
+
+// Font Sizes
+h1{
+    font-family: "Brady Bunch", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &.grey{
+        color: $grey;
+    }
+
+    &.orange{
+        color: $orange;
+    }
+
+    &.blue{
+        color: $blue;
+    }
+
+    &.dark-green{
+        color: $darkGreen;
+    }
+
+    &.mid-green{
+        color: $midGreen
+    }
+
+    &.lightGreen{
+        color: $lightGreen;
+    }
+
+    &.white{
+        color: $white;
+    }
+}
+
+h2{
+    font-family: "Brady Bunch", sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &.grey{
+        color: $grey;
+    }
+
+    &.orange{
+        color: $orange;
+    }
+
+    &.blue{
+        color: $blue;
+    }
+
+    &.dark-green{
+        color: $darkGreen;
+    }
+
+    &.mid-green{
+        color: $midGreen
+    }
+
+    &.lightGreen{
+        color: $lightGreen;
+    }
+
+    &.outline{
+        text-shadow: 
+            -2.5px -2.5px 0 #ffffff, 
+            2.5px -2.5px 0 #ffffff, 
+            -2.5px 2.5px 0 #ffffff, 
+            2.5px 2.5px 0 #ffffff;
+    }
+}
+
+h3{
+    font-family: "Brady Bunch", sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &.grey{
+        color: $grey;
+    }
+
+    &.orange{
+        color: $orange;
+    }
+
+    &.blue{
+        color: $blue;
+    }
+
+    &.dark-green{
+        color: $darkGreen;
+    }
+
+    &.mid-green{
+        color: $midGreen
+    }
+
+    &.lightGreen{
+        color: $lightGreen;
+    }
+
+    &.white{
+        color: $white;
+    }
+
+    &.outline{
+        text-shadow: 
+            -1.5px -1.5px 0 #ffffff, 
+            1.5px -1.5px 0 #ffffff, 
+            -1.5px 1.5px 0 #ffffff, 
+            1.5px 1.5px 0 #ffffff;
+    }
+}
+
+h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0px 5px;
+
+    &.grey{
+        color: $grey;
+    }
+
+    &.orange{
+        color: $orange;
+    }
+
+    &.blue{
+        color: $blue;
+    }
+
+    &.dark-green{
+        color: $darkGreen;
+    }
+
+    &.mid-green{
+        color: $midGreen
+    }
+
+    &.lightGreen{
+        color: $lightGreen;
+    }
+}
+
+p, li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px 0px 10px;
+
+    &.grey{
+        color: $grey;
+    }
+
+    &.orange{
+        color: $orange;
+    }
+
+    &.blue{
+        color: $blue;
+    }
+
+    &.dark-green{
+        color: $darkGreen;
+    }
+
+    &.mid-green{
+        color: $midGreen
+    }
+
+    &.lightGreen{
+        color: $lightGreen;
+    }
+
+    &.center{
+        text-align: center;
+    }
+
+    .swoopet{
+        font-family: "Brady Bunch", "Poppins", sans-serf;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    &.heading{
+        font-family: "Brady Bunch", "Poppins", sans-serf;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+
+    &.cta{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        display: inline-block;
+        margin: 20px auto;
+        background: $orange;
+        padding: 7px 20px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        border: 2px solid $orange;
+
+        &.shadow{
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+        }
+
+        &:hover{
+            background: $white;
+            color: $orange;
+        }
+    }
+}
+
+ul{
+
+    &.paw{
+        padding: 0px;
+        width: 90%;
+
+        li{
+            padding-left: 60px;
+            position: relative;
+            
+            &:before{
+                content: url("../links/paw_icon.svg");
+                display: inline-block;
+                margin-left: -60px;
+                width: 60px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    h2{
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    h4{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
+
+        .swoopet{
+            font-size: 19px;
+        }
+    }
+
+    a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    h1{
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    h2{
+        font-size: 62px;
+        line-height: 62px;
+    }
+
+    h3{
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    h4{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    a{
+        font-size: 16px;
+    }
+}

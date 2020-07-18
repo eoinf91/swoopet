@@ -1,0 +1,1161 @@
+@import 'imports/fonts.styles.scss';
+@import 'imports/text.styles.scss';
+@import 'imports/colors.styles.scss';
+@import 'imports/menu.styles.scss';
+@import 'imports/headCarousel.styles.scss';
+@import 'imports/testimonialsSlider.styles.scss';
+@import 'imports/productCarousel.styles.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    height: 150px;
+
+    .swoopet-logo{
+        width: 200px;
+        height: 100px;
+        background: url('../links/swoopet_cut_circle.svg');
+        background-size: contain;
+        background-position: top left;
+        background-repeat: no-repeat;
+        filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.5));
+        padding: 10px 20px 20px 10px;
+        position: relative;
+        z-index: 10000;
+
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .social-icons{
+        display: none;
+    }
+}
+
+.swoopet-difference{
+    padding-bottom: 20px;
+
+    .content{
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        height: 320px;
+
+        &:before{
+            content: '';
+            width: 200%;
+            height: 300px;
+            background: $lightGreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+            border-radius: 100%;
+            filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
+        }
+    }
+
+    .video{
+        width: 90%;
+        height: 200px;
+        background: $lightGrey;
+        margin: 0px auto;
+        filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
+        border-radius: 20px;
+    }
+}
+
+.product-range{
+    margin: 20px 0px;
+    padding: 0px 20px;
+    text-align: center;
+
+    .product-range-container{
+
+        .product-container{
+            margin: 20px;
+
+            h3{
+                text-align: left;
+                margin-left: 20px;
+            }
+
+            .product{
+                width: 100%;
+                min-height: 200px;
+                border: 5px solid $lightGreen;
+                background: $white;
+                filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
+                border-radius: 10px 30px 30px 30px;
+
+                h3{
+                    position: relative;
+                    margin: 0px;
+                    padding: 15px 0px 5px;
+                    width: 85%;
+                    text-align: center;
+                    transform: rotate(-2deg);
+
+                    &:before{
+                        content: url('../links/swoopet_cut_circle.svg');
+                        width: 110%;
+                        height: 200px;
+                        position: absolute;
+                        left: -3px;
+                        top: -3px;
+                        z-index: -1;
+                        filter: drop-shadow(2px 7px 2px rgba(0,0,0,0.25));
+                        transform: rotate(2deg);
+                    }
+                }
+
+                img{
+                    width: 80%;
+                    margin: 30px auto 10px;
+                    position: relative;
+                    display: block;
+                    z-index: -100;
+                }
+
+                .copy{
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+.how-to-swoopet{
+    padding: 20px;
+    text-align: center;
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    .video{
+        width: 90%;
+        height: 200px;
+        background: $lightGrey;
+        margin: 0px auto;
+        filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
+        border-radius: 20px;
+    }
+
+    .paws{
+        width: 100%;
+        margin: 20px 0px 0px;
+
+        svg{
+            display: block;
+            width: 75%;
+            margin: 0px auto 0px 0px;
+
+            &:last-of-type{
+                margin: 0px 0px 0px auto;
+            }
+        }
+    }
+}
+
+.instagram-feed{
+    padding: 20px;
+    text-align: center;
+
+    h2{
+        margin: 20px 0px 10px;
+    }
+
+    .insta-pics{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .insta-pic{
+            width: calc(100% / 2 - 5px);
+            background: $lightGreen;
+            height: 150px;
+            margin: 5px 0px;
+        }
+    }
+}
+
+footer{
+    padding: 20px;
+    
+    .pre-footer{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $grey;
+
+        img{
+            width: 200px;
+            display: block;
+            margin: 0px auto 20px;
+        }
+
+        .footer-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 30px auto 20px;
+            width: 250px;
+
+            ul{
+
+                li{
+                    margin: 5px 0px;
+
+                    a{
+                        color: $grey;
+                        font-size: 10px;
+                    }
+
+                    &:first-of-type a{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .legal-footer{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social-icons{
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a{
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $grey;
+                border-radius: 100%;
+                position: relative;
+
+                img{
+                    display: block;
+                    position: absolute;
+                    height: 15px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
+        }
+
+        .legal-links{
+
+            a{
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                color: $grey;
+                margin: 0px 0px 0px 15px;
+            }
+        }
+    }
+}
+
+.image-header{
+    width: 100%;
+    height: 375px;
+    background: $lightGrey;
+
+    .title{
+        position: absolute;
+        bottom: 20px;
+        background: $lightGreen;
+        width: 95%;
+        padding: 20px 10px 20px 10px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.5));
+
+        h1{
+            margin: 0px 0px 10px;
+        }
+    }
+}
+
+.one-col{
+    padding: 20px;
+}
+
+.about-page{
+    padding: 100px 20px 0px;
+    
+    .image-header{
+        background: url(../links/about_header_mob.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.blog-page{
+    padding: 100px 20px 0px;
+    
+    .image-header{
+        background: url(../links/blog_header_mob.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.contact-page{
+    padding: 100px 20px 0px;
+    
+    .image-header{
+        background: url(../links/contact_header_mob.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.user-benefits{
+    width: 100%;
+    background: $midGreen;
+    padding: 0px 20px 20px;
+    overflow: hidden;
+
+    .title{
+        position: relative;
+        width: 300px;
+        height: 150px;
+        top: -50px;
+        margin: auto;
+        text-align: center;
+        background: $lightGreen;
+        padding: 75px 10px 50px;
+        border-radius: 100%;
+        filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.35));
+    }
+}
+
+.blog-items{
+    margin: 20px 0px;
+
+    .latest-posts{
+
+        h2{
+            margin: 0px 0px 20px;
+        }
+
+        .blog-list{
+
+            .blog-list-item{
+
+                .blog-item{
+                    margin: 0px 0px 20px;
+
+                    .image{
+                        width: 100%;
+                        height: 250px;
+                        background: $lightGrey;
+                        margin-bottom: 20px;
+                    }
+
+                    .blog-excerpt{
+
+                        h3{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .quick-list{
+                display: none;
+            }
+        }
+    }
+}
+
+.contact-form{
+
+    h3{
+        margin: 50px 0px 10px;
+    }
+
+    form{
+        text-align: center;
+
+        .form-item{
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0px;
+            text-align: left;
+
+            label{
+                font-family: "Brady Bunch", sans-serif;
+                font-weight: normal;
+                color: $blue;
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+
+            input, textarea{
+                border: none;
+                background: $lightGrey;
+                padding: 10px 5px;
+                font-family: "Poppins", sans-serif;
+                letter-spacing: 1px;
+                font-weight: 200;
+                color: $grey;
+                resize: none;
+            }
+        }
+
+        button{
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            display: inline-block;
+            margin: 10px auto;
+            background: $blue;
+            padding: 7px 40px;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+            border: 2px solid $blue;
+
+            &.shadow{
+                box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+            }
+
+            &:hover{
+                background: $white;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.quick-buy{
+    position: fixed;
+    background: $blue;
+    bottom: 0px;
+    z-index: 1000;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    a{
+
+        .mob-hide{
+            display: none;
+        }
+        
+        &.cta{
+            margin: 0px;
+        }
+    }
+}
+
+.product-page{
+    padding: 150px 20px 0px;
+
+    .product-container{
+        margin-bottom: 50px;
+
+        .product-description{
+
+            h3{
+                margin: 0px 0px 20px;
+            }
+
+            p{
+                margin: 20px 0px;
+            }
+
+            a{
+
+                &.cta{
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
+
+    .product-features{
+
+        h2{
+            text-align: center;
+            margin: 0px 0px 20px;
+        }
+    }
+
+    .usage-instructions{
+        text-align: center;
+        margin-top: 50px;
+
+        h2{
+            margin: 0px 0px 40px;
+        }
+
+        h3{
+            margin: 40px 0px 10px;
+        }
+
+        .two-col{
+            margin-top: 50px;
+            
+            .col{
+
+                .instruction{
+                    margin: 20px 0px 40px;
+
+                    &:nth-of-type(even) img{
+                        margin: 10px 20px 10px auto;
+                    }
+
+                    img{
+                        display: block;
+                        width: 75%;
+                        margin: 10px auto 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.health-safety{
+    padding: 20px;
+
+    h2{
+        text-align: center;
+    }
+}
+
+.legal-page{
+    padding: 140px 20px 40px;
+
+    h2{
+        margin: 0px 0px 50px;
+    }
+
+    h3{
+        margin: 30px 0px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    header{
+        background: $white;
+
+        .swoopet-logo{
+            width: 200px;
+            z-index: 100000;
+        }
+    }
+
+    .swoopet-difference{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .content{
+            width: 65%;
+            z-index: 100;
+            overflow: visible;
+            padding: 50px 10px 10px 20px;
+            height: 320px;
+
+            &:before{
+                width: 130%;
+                height: 320px;
+                left: -20%;
+                transform: translateY(-50%) rotate(-6deg);
+            }
+        }
+
+        .video{
+            width: 35%;
+            margin-right: 20px;
+        }
+    }
+
+    .product-range{
+        margin-top: 50px;
+
+        .product-range-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .product-container{
+                width: 350px;
+                margin: 20px 0px;
+
+                .product{
+                    height: 600px;
+                    position: relative;
+                    border: 10px solid $lightGreen;
+
+                    a{
+
+                        &.cta{
+                            position: absolute;
+                            bottom: 20px;
+                            margin: 0px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .how-to-swoopet{
+
+        h2{
+            margin-bottom: 0px;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+        .video{
+            width: 50%;
+            margin-right: 20px;
+            height: 250px;
+        }
+
+        .paws{
+            width: 50%;
+            position: relative;
+            height: 400px;
+
+            svg{
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                &:last-of-type{
+                    top: auto;
+                    left: auto;
+                    bottom: 0px;
+                    right: 0px;
+                }
+            }
+        }
+        
+    }
+
+    .instagram-feed{
+
+        .insta-pics{
+            flex-wrap: nowrap;
+
+            .insta-pic{
+                width: calc(100% / 4 - 5px);
+                height: 170px;
+            }
+        }
+    }
+
+    footer{
+
+        .pre-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            img{
+                margin: 0px;
+                width: 120px;
+            }
+
+            .footer-nav{
+                margin: 0px;
+            }
+        }
+    }
+
+    .image-header{
+        height: 300px;
+        overflow: hidden;
+
+        .title{
+            left: auto;
+            right: -110px;
+            width: 600px;
+            border-radius: 100%;
+            transform: rotate(3deg);
+            height: 250px;
+            padding: 30px 130px 20px 70px;
+
+            h1{
+                transform: rotate(-3deg);
+            }
+
+            p{
+                transform: rotate(-3deg);
+            }
+        }
+    }
+
+    .about-page{
+
+        .image-header{
+            background: url(../links/about_header_dtp.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .blog-page{
+
+        .image-header{
+            background: url(../links/blog_header_dtp.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .contact-page{
+
+        .image-header{
+            background: url(../links/contact_header_dtp.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .two-col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .paw{
+            width: calc(100% / 2 - 10px);
+        }
+    }
+
+    .blog-items{
+
+        .latest-posts{
+
+            .blog-list{
+                display: flex;
+                justify-content: space-between;
+
+                .blog-list-item{
+                    width: 70%;
+
+                }
+
+                .quick-links{
+                    width: 20%;
+                    text-align: right;
+
+                    ul{
+                        margin: 20px 0px 50px;
+
+                        li{
+
+                            a{
+                                color: $grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form{
+
+        form{
+
+            .row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .form-item{
+                    width: calc(100% / 2 - 10px);
+                }
+            }
+        }
+    }
+
+    .quick-buy{
+        top: 60px;
+        bottom: auto;
+        padding: 10px 20px 10px 20px;
+
+        a{
+
+            &.cta{
+                width: 220px;
+                text-align: center;
+            }
+
+            .mob-hide{
+                display: inline-block;
+            }
+        }
+
+        h3{
+            text-align: right;
+            width: calc(100% - 240px);
+            margin-right: 20px;
+        }
+    }
+
+    .product-page{
+
+        .product-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .product-images, .product-description{
+                width: calc(100% / 2 - 20px);
+            }
+        }
+
+        .product-features{
+
+            .three-col{
+                display: flex;
+                justify-content: space-between;
+
+                ul{
+                    width: calc(100% / 3 - 10px);
+                }
+            }
+        }
+
+        .usage-instructions{
+
+            .two-col{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .col{
+                    width: calc(100% / 2 - 20px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: $white;
+
+        .swoopet-logo{
+            width: 300px;
+            height: 140px;
+            padding: 15px 40px 40px 15px;
+        }
+
+        nav{
+            width: 600px;
+            position: relative;
+        }
+
+        .social-icons{
+            display: block;
+            width: 300px;
+            padding: 20px;
+            text-align: right;
+
+            a{
+                display: inline-block;
+                margin: 0px 0px 0px 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: $lightGreen;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .swoopet-difference{
+        width: 95%;
+        margin: auto;
+
+        .content{
+            height: 400px;
+            width: 55%;
+            padding: 100px 40px 20px 20px;
+
+            &:before{
+                height: 400px;
+            }
+        }
+
+        .video{
+            width: 45%;
+            height: 350px;
+        }
+    }
+
+    .product-range{
+        width: 95%;
+        margin: 50px auto;
+
+        .product-range-container{
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .product-container{
+                width: calc(100% / 3 - 10px);
+
+                .product{
+                    height: 650px;
+
+                    h3{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+
+    .how-to-swoopet{
+        width: 1300px;
+        margin: 50px auto;
+
+        .video{
+            width: 45%;
+            height: 350px;
+        }
+
+        .paws{
+            height: 450px;
+
+            svg{
+                height: 330px;
+            }
+        }
+    }
+
+    .instagram-feed{
+        width: 90%;
+        margin: auto;
+
+        .insta-pics{
+
+            .insta-pic{
+                width: calc(100% / 4 - 20px);
+                height: 300px;
+            }
+        }
+    }
+
+    footer{
+        width: 90%;
+        margin: 50px auto 20px;
+    }
+
+    .image-header{
+        height: 500px;
+
+        .title{
+            bottom: 70px;
+            width: 800px;
+            right: -200px;
+            height: 300px;
+            padding: 50px 200px 50px 80px;
+        }
+    }
+
+    .one-col{
+        width: 800px;
+        margin: auto;
+    }
+
+    .about-page{
+        width: 90%;
+        margin: auto;
+        padding: 150px 20px 0px;
+    }
+
+    .blog-page{
+        width: 90%;
+        margin: auto;
+        padding: 150px 20px 0px;
+    }
+
+    .contact-page{
+        width: 90%;
+        margin: auto;
+        padding: 200px 20px 0px;
+    }
+
+    .user-benefits{
+
+        .title{
+            width: 400px;
+            height: 200px;
+        }
+
+        .two-col{
+            width: 1000px;
+            margin: 0px auto 40px;
+        }
+    }
+
+    .blog-items{
+
+        .latest-posts{
+
+            .blog-list{
+                
+                .blog-list-item{
+
+                    .blog-item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .image{
+                            width: 300px;
+                            height: 350px;
+                        }
+
+                        .blog-excerpt{
+                            width: calc(100% - 330px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form{
+        width: 1000px;
+        margin: 40px auto;
+    }
+
+    .quick-buy{
+        top: 80px;
+        z-index: 0;
+
+        h3{
+            font-size: 28px;
+            margin-right: 40px;
+        }
+    }
+
+    .product-page{
+        width: 90%;
+        margin: auto;
+
+        .product-container{
+
+            .product-description{
+                padding: 30px;
+                width: calc(100% / 2 - 50px);
+            }
+
+            .product-images{
+                width: calc(100% / 2 - 50px);
+            }
+        }
+
+        .usage-instructions{
+
+            .two-col{
+                justify-content: space-around;
+
+                .col{
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .health-safety{
+        padding: 75px 20px;
+
+        .two-col{
+            width:  1000px;
+            margin: auto;
+        }
+    }
+
+    .legal-page{
+        padding: 200px 20px 50px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    .product-range{
+
+        .product-range-container{
+
+            .product-container{
+                width: calc(100% / 3 - 50px);
+
+                .product{
+
+                    img{
+                        width: 65%;
+                    }
+
+                    h3{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
