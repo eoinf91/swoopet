@@ -67,11 +67,13 @@ header{
 
     .video{
         width: 90%;
-        height: 200px;
-        background: $lightGrey;
         margin: 0px auto;
         filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
-        border-radius: 20px;
+
+        video{
+            width: 100%;
+            border-radius: 20px;
+        }
     }
 }
 
@@ -145,11 +147,16 @@ header{
 
     .video{
         width: 90%;
-        height: 200px;
-        background: $lightGrey;
-        margin: 0px auto;
+        margin: 0px auto 100px;
         filter: drop-shadow(1px 7px 2px rgba(0,0,0,0.25));
         border-radius: 20px;
+        position: relative;
+        
+        video{
+            width: 100%;
+            border-radius: 20px;
+            
+        }
     }
 
     .paws{
@@ -318,6 +325,24 @@ footer{
         background-size: cover;
         background-position: center;
         position: relative;
+
+        &.whatsthescoop{
+            background: url(../links/blog__whats_the_scoop_header.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        &.toilettrain{
+            background: url(../links/blog__toilet_train_puppy_header.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.walktrain{
+            background: url(../links/blog__train_to_walk_on_lead.jpg);
+            background-size: cover;
+            background-position: center 30%;
+        }
     }
 }
 
@@ -373,6 +398,24 @@ footer{
                         height: 250px;
                         background: $lightGrey;
                         margin-bottom: 20px;
+
+                        &.whatsthescoop{
+                            background: url('../links/blog__whats_the_scoop_header.jpg');
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.toilettraining{
+                            background: url('../links/blog__toilet_train_puppy_header.jpg');
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &.walktraining{
+                            background: url('../links/blog__train_to_walk_on_lead.jpg');
+                            background-size: cover;
+                            background-position: center;
+                        }
                     }
 
                     .blog-excerpt{
@@ -501,6 +544,50 @@ footer{
                     margin: 10px 0px;
                 }
             }
+
+            .available-colours{
+                display: flex;
+                justify-content: space-between;
+                max-width: 250px;
+                align-items: center;
+
+                p{
+                    width: 150px;
+                }
+
+                button{
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    border-radius: 100%;
+                    border: 1px solid $grey;
+                    cursor: pointer;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &#grey{
+                        background: linear-gradient(-45deg, $grey 50%, $white 50%);
+                    }
+
+                    &#red{
+                        background: linear-gradient(-45deg, #843E45 50%, $white 50%);
+                    }
+                }
+            }
+
+            .product-desc-list{
+
+                ul{
+                    margin: 0 0 0 20px;
+
+                    li{
+                        list-style: disc;
+                        color: $grey;
+                    }
+                }
+            }
         }
     }
 
@@ -567,6 +654,26 @@ footer{
     }
 }
 
+.blog-page{
+
+    h2, h3, h4{
+        margin: 35px auto;
+    }
+
+    p{
+        margin: 10px auto;
+    }
+
+    ul{
+        margin: 10px auto 20px;
+
+        li{
+            list-style: disc;
+            margin: 10px 20px;
+        }
+    }
+}
+
 @media only screen and (min-width: 768px){
     header{
         background: $white;
@@ -601,6 +708,7 @@ footer{
         .video{
             width: 35%;
             margin-right: 20px;
+            align-self: center;
         }
     }
 
@@ -655,6 +763,7 @@ footer{
             width: 50%;
             margin-right: 20px;
             height: 250px;
+            position: relative;
         }
 
         .paws{
@@ -927,7 +1036,7 @@ footer{
 
     .swoopet-difference{
         width: 95%;
-        margin: auto;
+        margin: 20px auto 150px;
 
         .content{
             height: 400px;

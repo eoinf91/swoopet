@@ -30,7 +30,50 @@
           <!-- Navigation Items -->
           <ul id="menu">
             <a href="index.html" class="active"><li>Home</li></a>
-            <a href="product.html"><li>Products</li></a>
+            <li id="products-dropdown" onclick="openProductRange()">
+                Products
+                <!-- The Swoopet Product Range -->
+                <div class="product-range" id="productrange">
+                    <div class="product-range-container">
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Pooper scooper & retractable leash</h3>
+                        <img src="links/scooper_and_leash.jpg" alt="Pooper Scooper & retractable leash">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> ALL IN ONE Pooper Scooper and Retractable Leash. 5m Medium.</p>
+                            <p class="grey">Dog size: 25kg</p>
+                            <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                            <a href="pooper-scooper-and-retractable-lead.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Companct Leash Link Pooper Scooper</h3>
+                        <img src="links/leash_link.jpg" alt="Companct Leash Link Pooper Scooper">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> Compact Leash Link Pooper Scooper, links to all retractable, rope, and nylon dog leashes for all small and large dogs.</p>
+                            <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                            <a href="leash-link.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Dog Poop Bag Dispenser</h3>
+                        <img src="links/bag_dispenser.jpg" alt="Dog Poop Bag Dispenser">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> Dog Poop Bag Dispenser for Retractable, Rope and Nylon Dog Leashes. Includes 1 Roll of 20 Unscented Dog Waste Bags</p>
+                            <a href="bag-dispenser.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </li>
             <a href="about_us.html"><li>About Us</li></a>
             <a href="blog.html"><li>Blog</li></a>
             <a href="#"><li>Retail Outlets</li></a>
@@ -58,7 +101,7 @@
         <div class="image-header">
             <div class="title">
                 <h1 class="dark-green">Swoopet Blog</h1>
-                <p class="grey">Integer in bibendum urna. Nam in est aliquam, pulvinar turpis vitae, pellentesque dui. Maecenas vel mauris ante. Maecenas elementum non sapien non pretium. Suspendisse fermentum.</p>
+                <p class="grey">Find the latest news about our products and services here, plus lots of great resources for pet owners!</p>
             </div>
         </div>
 
@@ -69,47 +112,31 @@
                 <div class="blog-list">
                     <div class="blog-list-item">
                         <div class="blog-item">
-                            <div class="image"></div>
+                            <div class="image whatsthescoop"></div>
                             <div class="blog-excerpt">
-                                <h3 class="mid-green">Healthy Meals for your dog</h3>
-                                <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ipsum augue, id malesuada lacus malesuada nec. Sed mi orci, condimentum a facilisis vitae, vestibulum a ipsum. Proin non pulvinar tortor, at cursus odio. Nulla facilisi. Nullam ullamcorper porta lorem a bibendum. Phasellus faucibus, ligula nec molestie vestibulum, nulla magna convallis ex, nec congue risus nulla consectetur ex. Ut sed placerat arcu....</p>
-                                <a href="#" class="cta">Read Post</a>
+                                <h3 class="mid-green">Dog Poop - What’s the scoop??</h3>
+                                <p class="grey">If you own a dog, cleaning up dog poop will be part of your daily routine. This is a task we all hate doing, but it is very necessary. Dog poop can be harmful to your health and the incorrect disposal can cause many problems....</p>
+                                <a href="/blog/dog-poop__whats_the_scoop.html" class="cta">Read Post</a>
                             </div>
                         </div>
                         <div class="blog-item">
-                            <div class="image"></div>
+                            <div class="image toilettraining"></div>
                             <div class="blog-excerpt">
-                                <h3 class="mid-green">Healthy Meals for your dog</h3>
-                                <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ipsum augue, id malesuada lacus malesuada nec. Sed mi orci, condimentum a facilisis vitae, vestibulum a ipsum. Proin non pulvinar tortor, at cursus odio. Nulla facilisi. Nullam ullamcorper porta lorem a bibendum. Phasellus faucibus, ligula nec molestie vestibulum, nulla magna convallis ex, nec congue risus nulla consectetur ex. Ut sed placerat arcu....</p>
-                                <a href="#" class="cta">Read Post</a>
+                                <h3 class="mid-green">Toilet Training Your Puppy</h3>
+                                <p class="grey">You’ve just welcomed a new bundle of fluff into your family. Congratulations! These are exciting times, and the start of a lifetime of friendship and love. It is easy to get caught up in the cuteness - but it is important to also get your puppy started on toilet training - consistently and early....</p>
+                                <a href="blog/toilet_training_your_puppy.html" class="cta">Read Post</a>
                             </div>
                         </div>
                         <div class="blog-item">
-                            <div class="image"></div>
+                            <div class="image walktraining"></div>
                             <div class="blog-excerpt">
-                                <h3 class="mid-green">Healthy Meals for your dog</h3>
-                                <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ipsum augue, id malesuada lacus malesuada nec. Sed mi orci, condimentum a facilisis vitae, vestibulum a ipsum. Proin non pulvinar tortor, at cursus odio. Nulla facilisi. Nullam ullamcorper porta lorem a bibendum. Phasellus faucibus, ligula nec molestie vestibulum, nulla magna convallis ex, nec congue risus nulla consectetur ex. Ut sed placerat arcu....</p>
-                                <a href="#" class="cta">Read Post</a>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image"></div>
-                            <div class="blog-excerpt">
-                                <h3 class="mid-green">Healthy Meals for your dog</h3>
-                                <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ipsum augue, id malesuada lacus malesuada nec. Sed mi orci, condimentum a facilisis vitae, vestibulum a ipsum. Proin non pulvinar tortor, at cursus odio. Nulla facilisi. Nullam ullamcorper porta lorem a bibendum. Phasellus faucibus, ligula nec molestie vestibulum, nulla magna convallis ex, nec congue risus nulla consectetur ex. Ut sed placerat arcu....</p>
-                                <a href="#" class="cta">Read Post</a>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image"></div>
-                            <div class="blog-excerpt">
-                                <h3 class="mid-green">Healthy Meals for your dog</h3>
-                                <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ipsum augue, id malesuada lacus malesuada nec. Sed mi orci, condimentum a facilisis vitae, vestibulum a ipsum. Proin non pulvinar tortor, at cursus odio. Nulla facilisi. Nullam ullamcorper porta lorem a bibendum. Phasellus faucibus, ligula nec molestie vestibulum, nulla magna convallis ex, nec congue risus nulla consectetur ex. Ut sed placerat arcu....</p>
-                                <a href="#" class="cta">Read Post</a>
+                                <h3 class="mid-green">Train Your Dog to Walk on a Lead</h3>
+                                <p class="grey">It is hugely important that you train your puppy or dog to walk on a lead with no pulling. A dog that pulls on lead is a danger to itself and to its owner. Training your dog to walk on lead can be a daunting task but if you follow our guide below, it will make the task easier and ensure successful training....</p>
+                                <a href="blog/train_your_dog_to_walk_on_a_lead.html" class="cta">Read Post</a>
                             </div>
                         </div>
                     </div>
-                    <div class="quick-links">
+                    <!-- <div class="quick-links">
                         <ul>
                             <li class="dark-green heading">Categories</li>
                             <li class="dark-green"><a href="#">Nutrition</a></li>
@@ -121,7 +148,7 @@
                             <li class="dark-green"><a href="#">2020</a></li>
                             <li class="dark-green"><a href="#">2019</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -140,7 +167,7 @@
                 <p class="grey"><span class="swoopet">Swoopet</span> ALL IN ONE Pooper Scooper and Retractable Leash. 5m Medium.</p>
                 <p class="grey">Dog size: 25kg</p>
                 <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
-                <a href="product.html" class="cta shadow">Buy Now</a>
+                <a href="product.html" class="cta shadow">Find out more</a>
               </div>
             </div>
           </div>
@@ -152,7 +179,7 @@
               <div class="copy">
                 <p class="grey"><span class="swoopet">Swoopet</span> Compact Leash Link Pooper Scooper, links to all retractable, rope, and nylon dog leashes for all small and large dogs.</p>
                 <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
-                <a href="product.html" class="cta shadow">Buy Now</a>
+                <a href="product.html" class="cta shadow">Find out more</a>
               </div>
             </div>
           </div>
@@ -163,7 +190,7 @@
               <img src="links/bag_dispenser.jpg" alt="Dog Poop Bag Dispenser">
               <div class="copy">
                 <p class="grey"><span class="swoopet">Swoopet</span> Dog Poop Bag Dispenser for Retractable, Rope and Nylon Dog Leashes. Includes 1 Roll of 20 Unscented Dog Waste Bags</p>
-                <a href="product.html" class="cta shadow">Buy Now</a>
+                <a href="product.html" class="cta shadow">Find out more</a>
               </div>
             </div>
           </div>
@@ -209,6 +236,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Toggle Product Range
+      function openProductRange() {
+            var productRange = document.getElementById("productrange");
+
+            if(productRange.style.display == "block"){
+                productRange.style.display = "none";
+            } else {
+                productRange.style.display = "block";
+            }
+        }
+    </script>
 
   </body>
 </html>

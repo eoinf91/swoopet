@@ -299,6 +299,22 @@ ul.paw li:before {
 #menuToggle a:hover {
   color: #F58131;
 }
+#menuToggle #products-dropdown {
+  font-family: "Brady Bunch", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 15px 0px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+#menuToggle #products-dropdown:hover {
+  color: #F58131;
+}
+#menuToggle #products-dropdown .product-range {
+  display: none;
+}
 #menuToggle input {
   display: block;
   width: 40px;
@@ -389,10 +405,56 @@ ul.paw li:before {
     display: block;
     color: #6A6A6A;
   }
+  #menuToggle #menu #products-dropdown {
+    position: relative;
+  }
+  #menuToggle #menu #products-dropdown .product-range {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.75);
+    padding-top: 100px;
+    border-bottom: 2px solid #6A6A6A;
+    top: 80px;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container {
+    display: flex;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container {
+    width: calc(100% / 3 - 10px);
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container .product {
+    height: 350px;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container .product h3 {
+    font-size: 26px;
+    line-height: 26px;
+    padding: 10px 0 5px;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container .product h3:before {
+    width: 120%;
+    height: 250px;
+    left: -13px;
+    top: -1px;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container .product .copy p {
+    display: none;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container .product-container .product .copy a.cta {
+    width: 200px;
+  }
 }
 @media only screen and (min-width: 1366px) {
   #menuToggle #menu {
     width: 600px;
+  }
+  #menuToggle #menu #products-dropdown .product-range .product-range-container {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 @keyframes tonext {
@@ -650,7 +712,7 @@ ol, li {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  height: 370px;
+  height: 420px;
 }
 .testimonials .testimonials-container .slider .slides::-webkit-scrollbar {
   width: 10px;
@@ -669,7 +731,7 @@ ol, li {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 98%;
-  height: 350px;
+  height: 380px;
   margin-right: 50px;
   margin-bottom: 10px;
   border-radius: 20px;
@@ -808,6 +870,15 @@ section .container .carousel .carousel__slides .carousel__slide div > img {
   height: 100%;
   object-fit: cover;
 }
+section .container .carousel .carousel__slides .carousel__slide div > video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 section .container .carousel .carousel__slides .carousel__slide img {
   display: block;
   flex: 1 1 auto;
@@ -864,6 +935,15 @@ section .container .carousel .carousel__thumbnails label > img {
   bottom: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+section .container .carousel .carousel__thumbnails label > video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 section .container .carousel .carousel__thumbnails label:hover, section .container .carousel .carousel__thumbnails label:focus {
@@ -935,10 +1015,11 @@ header .social-icons {
 }
 .swoopet-difference .video {
   width: 90%;
-  height: 200px;
-  background: #eeeeee;
   margin: 0px auto;
   filter: drop-shadow(1px 7px 2px rgba(0, 0, 0, 0.25));
+}
+.swoopet-difference .video video {
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -1001,10 +1082,13 @@ header .social-icons {
 }
 .how-to-swoopet .video {
   width: 90%;
-  height: 200px;
-  background: #eeeeee;
-  margin: 0px auto;
+  margin: 0px auto 100px;
   filter: drop-shadow(1px 7px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  position: relative;
+}
+.how-to-swoopet .video video {
+  width: 100%;
   border-radius: 20px;
 }
 .how-to-swoopet .paws {
@@ -1148,6 +1232,21 @@ footer .legal-footer .legal-links a {
   background-position: center;
   position: relative;
 }
+.blog-page .image-header.whatsthescoop {
+  background: url(../links/blog__whats_the_scoop_header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.blog-page .image-header.toilettrain {
+  background: url(../links/blog__toilet_train_puppy_header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.blog-page .image-header.walktrain {
+  background: url(../links/blog__train_to_walk_on_lead.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
 
 .contact-page {
   padding: 100px 20px 0px;
@@ -1192,6 +1291,21 @@ footer .legal-footer .legal-links a {
   height: 250px;
   background: #eeeeee;
   margin-bottom: 20px;
+}
+.blog-items .latest-posts .blog-list .blog-list-item .blog-item .image.whatsthescoop {
+  background: url("../links/blog__whats_the_scoop_header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.blog-items .latest-posts .blog-list .blog-list-item .blog-item .image.toilettraining {
+  background: url("../links/blog__toilet_train_puppy_header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.blog-items .latest-posts .blog-list .blog-list-item .blog-item .image.walktraining {
+  background: url("../links/blog__train_to_walk_on_lead.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .blog-items .latest-posts .blog-list .blog-list-item .blog-item .blog-excerpt h3 {
   margin-bottom: 10px;
@@ -1287,6 +1401,39 @@ footer .legal-footer .legal-links a {
 .product-page .product-container .product-description a.cta {
   margin: 10px 0px;
 }
+.product-page .product-container .product-description .available-colours {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  align-items: center;
+}
+.product-page .product-container .product-description .available-colours p {
+  width: 150px;
+}
+.product-page .product-container .product-description .available-colours button {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 100%;
+  border: 1px solid #6A6A6A;
+  cursor: pointer;
+}
+.product-page .product-container .product-description .available-colours button:focus {
+  outline: none;
+}
+.product-page .product-container .product-description .available-colours button#grey {
+  background: linear-gradient(-45deg, #6A6A6A 50%, #ffffff 50%);
+}
+.product-page .product-container .product-description .available-colours button#red {
+  background: linear-gradient(-45deg, #843E45 50%, #ffffff 50%);
+}
+.product-page .product-container .product-description .product-desc-list ul {
+  margin: 0 0 0 20px;
+}
+.product-page .product-container .product-description .product-desc-list ul li {
+  list-style: disc;
+  color: #6A6A6A;
+}
 .product-page .product-features h2 {
   text-align: center;
   margin: 0px 0px 20px;
@@ -1333,6 +1480,20 @@ footer .legal-footer .legal-links a {
   margin: 30px 0px 20px;
 }
 
+.blog-page h2, .blog-page h3, .blog-page h4 {
+  margin: 35px auto;
+}
+.blog-page p {
+  margin: 10px auto;
+}
+.blog-page ul {
+  margin: 10px auto 20px;
+}
+.blog-page ul li {
+  list-style: disc;
+  margin: 10px 20px;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     background: #ffffff;
@@ -1364,6 +1525,7 @@ footer .legal-footer .legal-links a {
   .swoopet-difference .video {
     width: 35%;
     margin-right: 20px;
+    align-self: center;
   }
 
   .product-range {
@@ -1405,6 +1567,7 @@ footer .legal-footer .legal-links a {
     width: 50%;
     margin-right: 20px;
     height: 250px;
+    position: relative;
   }
   .how-to-swoopet .paws {
     width: 50%;
@@ -1603,7 +1766,7 @@ footer .legal-footer .legal-links a {
 
   .swoopet-difference {
     width: 95%;
-    margin: auto;
+    margin: 20px auto 150px;
   }
   .swoopet-difference .content {
     height: 400px;

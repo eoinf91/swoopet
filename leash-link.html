@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leash Link - Product - Swoopet</title>
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="links/favicon.png">
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Swoopet Logo -->
+      <div class="swoopet-logo">
+        <img src="links/swoopet_logo_w_bg.svg" alt="Swoopet" />
+      </div>
+      
+      <!-- Navigation -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!-- Hidden Checkbox -->
+          <input type="checkbox" />
+          <!-- Hamburger Icon -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- Navigation Items -->
+          <ul id="menu">
+            <a href="index.html" class="active"><li>Home</li></a>
+            <li id="products-dropdown" onclick="openProductRange()">
+                Products
+                <!-- The Swoopet Product Range -->
+                <div class="product-range" id="productrange">
+                    <div class="product-range-container">
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Pooper scooper & retractable leash</h3>
+                        <img src="links/scooper_and_leash.jpg" alt="Pooper Scooper & retractable leash">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> ALL IN ONE Pooper Scooper and Retractable Leash. 5m Medium.</p>
+                            <p class="grey">Dog size: 25kg</p>
+                            <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                            <a href="pooper-scooper-and-retractable-lead.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Companct Leash Link Pooper Scooper</h3>
+                        <img src="links/leash_link.jpg" alt="Companct Leash Link Pooper Scooper">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> Compact Leash Link Pooper Scooper, links to all retractable, rope, and nylon dog leashes for all small and large dogs.</p>
+                            <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                            <a href="leash-link.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <h3 class="orange">New</h3>
+                        <div class="product">
+                        <h3 class="grey outline">Dog Poop Bag Dispenser</h3>
+                        <img src="links/bag_dispenser.jpg" alt="Dog Poop Bag Dispenser">
+                        <div class="copy">
+                            <p class="grey"><span class="swoopet">Swoopet</span> Dog Poop Bag Dispenser for Retractable, Rope and Nylon Dog Leashes. Includes 1 Roll of 20 Unscented Dog Waste Bags</p>
+                            <a href="bag-dispenser.html" class="cta shadow">Find out more</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </li>
+            <a href="about_us.html"><li>About Us</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="#"><li>Retail Outlets</li></a>
+            <a href="contact_us.html"><li>Contact Us</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://facebook.com">
+          <img src="links/fb_logo.svg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="links/insta_logo.svg" alt="Instagram" />
+        </a>
+        <a href="https://google.com">
+          <img src="links/google_logo.svg" alt="Google" />
+        </a>
+      </div>
+
+      <!-- Quick Buy -->
+        <div class="quick-buy">
+            <h3 class="white">Portable Compact Leash Link Pooper Scooper</h3>
+            <a href="#" class="cta"><span class="mob-hide">Buy Now: </span>£13.49</a>
+        </div>
+    </header>
+
+    <div class="product-page">
+        <div class="product-container">
+            <div class="product-images">
+              <section>
+                <div class="container">
+                  <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <ul class="carousel__slides">
+                      <li class="carousel__slide">
+                        <figure>
+                          <div>
+                            <img id="large-grey-01" src="links/leash_link.jpg" alt="">
+                          </div>
+                        </figure>
+                      </li>
+                      <li class="carousel__slide">
+                        <figure>
+                          <div>
+                            <img id="large-grey-02" src="links/leash_link_02.jpg" alt="">
+                          </div>
+                        </figure>
+                      </li>
+                      <li class="carousel__slide">
+                        <figure>
+                          <div>
+                            <video controls controllist="nodownload">
+                              <source src="links/videos/swoopet_leash_link.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                        </figure>
+                      </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                      <li>
+                        <label for="slide-1"><img id="grey-01" src="links/leash_link.jpg" alt=""></label>
+                      </li>
+                      <li>
+                        <label for="slide-2"><img id="grey-02" src="links/leash_link_02.jpg" alt=""></label>
+                      </li>
+                      <li>
+                        <label for="slide-3"><img id="grey-03" src="links/leash_link_03.jpg" alt=""></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="product-description">
+                <h3 class="grey">Portable Compact Leash Link Pooper Scooper</h3>
+                <h3 class="grey">£13.49</h3>
+                <p class="grey"><span class="swoopet">Swoopet</span> NEW Portable Compact Leash Link Pooper Scooper, Small and Large Dog Poop Scoop Waste Collector</p>
+                <div class="available-colours">
+                    <p class="grey"><span class="swoopet">COLOURS AVAILABLE</span></p>
+                    <button id="grey" onclick="goGrey()"></button>
+                    <button id="red" onclick="goRed()"></button>
+                </div>
+                <div class="product-desc-list">
+                  <ul>
+                    <li>The <span class="swoopet">Swoopet</span> is small, lightweight and compact</li>
+                    <li><span class="swoopet">Swoopet</span> Leash Link is designed to easily link to most retractable, rope and nylon leashes on the market, ensuring to be always at hand when walking your pet</li>
+                    <li><span class="swoopet">Swoopet</span> holds multiple (on average 20) dog waste bags within it’s storage and dispensing chamber</li>
+                    <li><span class="swoopet">Swoopet</span> easily and hygienically picks up all sizes of dog waste from most surfaces under your pet’s feet. ie. concrete, grass, tar macadam, brick paver’s, gravel, snow and ice surfaces and uneven surfaces</li>
+                    <li><span class="swoopet">Swoopet</span> pooper scooper is suitable for dogs of all sizes</li>
+                    <li><span class="swoopet">Swoopet</span> can pick up multiple dog wastes in one bag</li>
+                    <li>The <span class="swoopet">Swoopet</span> removes the sensation of feeling your pet’s warm waste through a bag, making the collection process significantly more bearable. It’s the no fuss, no feel solution</li>
+                    <li>A used dog waste bag holding clip has been incorporated into the <span class="swoopet">Swoopet</span> Leash Link, which allows the used waste bag to be hygienically stored until the waste can be properly disposed of into a waste disposal bin</li>
+                    <li><span class="swoopet">Swoopet</span> is easy to clean and maintain, just rinse under a warm tap after use and allow to air dry</li>
+                    <li><span class="swoopet">Swoopet</span> is designed to be used comfortably by people of all ages, capable of managing a dog on a leash</li>
+                    <li><span class="swoopet">Swoopet</span> is made from durable materials, tested extensively at design stage, and built to last</li>
+                  </ul>
+                </div>
+                <a href="#" class="cta">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="product-features">
+          <h2 class="blue">Features</h2>
+          <div class="three-col">
+            <ul class="paw">
+                <li class="grey">Lightweight and compact</li>
+                <li class="grey">Easy-link to most retractable, rope and nylon leashes</li>
+                <li class="grey">Soft ergonomically designed pooper scooper</li>
+            </ul>
+            <ul class="paw">
+                <li class="grey">Patented poop grip mechanism</li>
+                <li class="grey">Integrated poop bag roll chamber within pooper scooper</li>
+                <li class="grey">Poop bag rewind mechanism</li>
+            </ul>
+            <ul class="paw">
+                <li class="grey">Suitable for small and large sized dogs</li>
+                <li class="grey">Swoopet Pooper scooper is suitable for most surfaces, including concrete and brick pavements, chippings, tar macadam, grass and Gravel surfaces</li>
+                <li class="grey">Includes used poop bag carrier clips</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Usage Instructions -->
+        <div class="usage-instructions">
+          <h2 class="blue">Usage Instructions</h2>
+          <h3 class="grey">Pet Safety First</h3>
+          <p class="grey">You’ll need both hands to use Swoopet. Wear the wrist strap to retain control of your pet while operating Swoopet.</p>
+
+          <div class="two-col">
+            <div class="col getting-started">
+              <p class="mid-green"><span class="swoopet">Getting Started</span></p>
+              <div class="instruction">
+                <img src="links/getting_started_01.png" alt="">
+                <p class="grey">Grip the Swoopet with your hand as shown, expand your fingers and thumb to fully extend the Swoopet blades for larger waste.</p>
+              </div>
+              <div class="instruction">
+                <img src="links/getting_started_02.png" alt="">
+                <p class="grey">Feed the first bag from the roll of bags through the dispensing slot, and push the remaining roll into the chamber. Refit the roll winder and turn the outer screw to lock.</p>
+              </div>
+              <div class="instruction">
+                <img src="links/getting_started_03.png" alt="">
+                <p class="grey">Place the Swoopet into the bag, blades first, then press the bag between the blades with your fingers as shown.</p>
+              </div>
+            </div>
+            <div class="col to-use">
+              <p class="blue"><span class="swoopet">To Use</span></p>
+              <div class="instruction">
+                <img src="links/to_use_01.png" alt="">
+                <p class="grey">Grip the Swoopet with your hand as shown, expand your fingers and thumb to fully extend the Swoopet blades for larger waste.</p>
+              </div>
+              <div class="instruction">
+                <img src="links/to_use_02.png" alt="">
+                <p class="grey">Feed the first bag from the roll of bags through the dispensing slot, and push the remaining roll into the chamber. Refit the roll winder and turn the outer screw to lock.</p>
+              </div>
+              <div class="instruction">
+                <img src="links/to_use_03.png" alt="">
+                <p class="grey">Place the Swoopet into the bag, blades first, then press the bag between the blades with your fingers as shown.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- User Benefits -->
+    <div class="user-benefits">
+      <div class="title">
+          <h2 class="grey outline">User Benefits</h2>
+      </div>
+      <div class="two-col">
+          <ul class="paw">
+              <li class="grey">The <span class="swoopet">Swoopet</span> is small, lightweight and compact.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> is designed to form part of the dog leash, conveniently at hand when walking your pet.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> holds multiple (on average 20) dog waste bags within it’s storage and dispensing chamber.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> easily and hygienically picks up dog waste from most surfaces under your pet’s feet. ie. concrete, grass, tar macadam, brick pavers, gravel, snow and ice surfaces and uneven surfaces.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> is suitable for dogs of all sizes.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> can pick up multiple dog wastes in one bag.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> removes the sensation of feeling your pet’s warm waste through a bag, making the collection process significantly more bearable. It’s the no fuss, no feel solution!</li>
+          </ul>
+          <ul class="paw">
+              <li class="grey">A used dog waste bag holder has been built into the <span class="swoopet">Swoopet</span> Retractable, <span class="swoopet">Swoopet</span> Leash Link and the <span class="swoopet">Swoopet</span> Bag Dispenser, so the used waste bag can be hygienically stored until the waste can be properly disposed of into a waste disposal bin.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> is easy to clean and maintain; just rinse under a hot tap after use, and allow to air dry.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> is designed to be used comfortably by people of all ages capable of managing a pet on a leash.</li>
+              <li class="grey"><span class="swoopet">Swoopet</span> is made from durable material, tested extensively at the design stage, and is built to last.</li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- Health & Safety -->
+    <div class="health-safety">
+      <h2 class="blue">Health & Safety Precautions</h2>
+      <div class="two-col">
+        <ul class="paw">
+          <li class="grey">Keep away from children, this product is not a toy, and contains small components and including plastic bags, which are dangerous to children, and may cause choking or suffocation</li>
+          <li class="grey">Examine your <span class="swoopet">Swoopet</span> Leash Link before every use, as all products can be subject to wear and tear</li>
+          <li class="grey">Ensure that the Velcro strap is properly linked and closed to your rope, nylon or retractable leashes available on the marketplace</li>
+          <li class="grey">Pet Safety First: Ensure to keep a firm grip of the leash at all times while operating <span class="swoopet">Swoopet</span>. Lock the tape or chord length for greater control </li>
+          <li class="grey">Never allow children to use your Swoopet pooper scooper</li>
+          <li class="grey">Ensure to always firmly grip the handle of your leash, when walking your dog</li>
+        </ul>
+        <ul class="paw">
+            <li class="grey">Ensure to activate the locking mechanism (if applicable) to limit your dog’s leash distance before using the <span class="swoopet">Swoopet</span></li>
+            <li class="grey">Do not use your Leash to tie your dog to a post or other anchor</li>
+            <li class="grey">(If applicable) Do not grasp the leash tape or chord with your hand, always allow the mechanical mechanism to retract the length of the tape</li>
+            <li class="grey">Do not wrap or wind the leash around any part of your body, as it may cause injury</li>
+            <li class="grey">Regularly check that your pet’s collar or harness for weakness over time, before taking your pet for a walk</li>
+            <li class="grey">(If applicable) To heel your dog, shorten the length of your leash, tape or chord and activate the locking mechanism for the duration of the walk</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- The Swoopet Product Range -->
+    <div class="product-range">
+        <h2 class="blue">Our Products</h2>
+        <div class="product-range-container">
+          <div class="product-container">
+            <h3 class="orange">New</h3>
+            <div class="product">
+              <h3 class="grey outline">Pooper scooper & retractable leash</h3>
+              <img src="links/scooper_and_leash.jpg" alt="Pooper Scooper & retractable leash">
+              <div class="copy">
+                <p class="grey"><span class="swoopet">Swoopet</span> ALL IN ONE Pooper Scooper and Retractable Leash. 5m Medium.</p>
+                <p class="grey">Dog size: 25kg</p>
+                <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                <a href="pooper-scooper-and-retractable-lead.html" class="cta shadow">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <h3 class="orange">New</h3>
+            <div class="product">
+              <h3 class="grey outline">Companct Leash Link Pooper Scooper</h3>
+              <img src="links/leash_link.jpg" alt="Companct Leash Link Pooper Scooper">
+              <div class="copy">
+                <p class="grey"><span class="swoopet">Swoopet</span> Compact Leash Link Pooper Scooper, links to all retractable, rope, and nylon dog leashes for all small and large dogs.</p>
+                <p class="grey">Includes 1 roll of 20 unscented biodegradable dog waste bags.</p>
+                <a href="leash-link.html" class="cta shadow">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <h3 class="orange">New</h3>
+            <div class="product">
+              <h3 class="grey outline">Dog Poop Bag Dispenser</h3>
+              <img src="links/bag_dispenser.jpg" alt="Dog Poop Bag Dispenser">
+              <div class="copy">
+                <p class="grey"><span class="swoopet">Swoopet</span> Dog Poop Bag Dispenser for Retractable, Rope and Nylon Dog Leashes. Includes 1 Roll of 20 Unscented Dog Waste Bags</p>
+                <a href="bag-dispenser.html" class="cta shadow">Find out more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>  
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <div class="testimonials-container">
+        <h3 class="grey outline">What our customers say</h3>
+        <div class="slider">
+          <div class="slides">
+            <div id="slide-1" class="slide">
+              <div class="image"></div>
+              <div class="content">
+                <p class="lightGreen">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <h4 class="grey">Jennifer Dunne</h4>
+                <p class="grey">Very hand that this attached easily to my own dog leash.</p>
+              </div>
+            </div>
+            <div id="slide-2" class="slide">
+              <div class="image"></div>
+              <div class="content">
+                <p class="lightGreen">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <h4 class="grey">Elaine Bradly, Dog owner</h4>
+                <p class="grey">Really easy to use product that scoops a lot of dog waste - important when walking our three dogs!</p>
+              </div>
+            </div>
+            <div id="slide-3" class="slide">
+              <div class="image"></div>
+              <div class="content">
+                <p class="lightGreen">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <h4 class="grey">Declan Ryan</h4>
+                <p class="grey">The retractable leash is well priced, well made and sturdy enough for even a big dog.</p>
+              </div>
+            </div>
+            <div id="slide-4" class="slide">
+              <div class="image"></div>
+              <div class="content">
+                <p class="lightGreen">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <h4 class="grey">Saoirse Ryan</h4>
+                <p class="grey">Takes the "icky-ness" out of walking the dog and disposing of the dog poop!</p>
+              </div>
+            </div>
+            <!-- <div id="slide-5" class="slide">
+              <div class="image"></div>
+              <div class="content">
+                <p class="lightGreen">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <h4 class="grey">NAME NAME</h4>
+                <p class="grey">testimonial review to be insertted</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="pre-footer">
+        <img src="links/swoopet_logo_no_bg.svg" alt="Swoopet">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="product.html">Retractable Leash</a></li>
+            <li><a href="product.html">Compact Leash Link</a></li>
+            <li><a href="product.html">Bag Dispenser</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Retail Outlets</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal-footer">
+        <div class="social-icons">
+          <a href="https://facebook.com">
+            <img src="links/fb_logo.svg" alt="FB">
+          </a>
+          <a href="https://instagram.com">
+            <img src="links/insta_logo.svg" alt="IG">
+          </a>
+          <a href="https://google.com">
+            <img src="links/google_logo.svg" alt="Google">
+          </a>
+        </div>
+        <div class="legal-links">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        // Go Red
+        function goRed() {
+            document.getElementById("grey-01").src = "links/leash_link_red.jpg";
+            document.getElementById("grey-02").src = "links/leash_link_red_02.jpg";
+            document.getElementById("large-grey-01").src = "links/leash_link_red.jpg";
+            document.getElementById("large-grey-02").src = "links/leash_link_red_02.jpg";
+        }
+
+        // Go Grey
+        function goGrey() {
+            document.getElementById("grey-01").src = "links/leash_link.jpg";
+            document.getElementById("grey-02").src = "links/leash_link_02.jpg";
+            document.getElementById("large-grey-01").src = "links/leash_link.jpg";
+            document.getElementById("large-grey-02").src = "links/leash_link_02.jpg";
+        }
+
+        // Toggle Product Range
+        function openProductRange() {
+            var productRange = document.getElementById("productrange");
+
+            if(productRange.style.display == "block"){
+                productRange.style.display = "none";
+            } else {
+                productRange.style.display = "block";
+            }
+        }
+
+
+    </script>
+
+  </body>
+</html>

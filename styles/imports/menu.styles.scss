@@ -34,6 +34,25 @@
         }
     }
 
+    #products-dropdown{
+        font-family: "Brady Bunch", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: $white;
+        margin: 15px 0px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: $orange;
+        }
+
+        .product-range{
+            display: none;
+        }
+    }
+
     input{
         display: block;
         width: 40px;
@@ -144,6 +163,63 @@
                 display: block;
                 color: $grey;
             }
+
+            #products-dropdown{
+                position: relative;
+
+                .product-range{
+                    display: none;
+                    position: fixed;
+                    width: 100vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: 0;
+                    z-index: 1000;
+                    background: rgba(255,255,255,0.75);
+                    padding-top: 100px;
+                    border-bottom: 2px solid $grey;
+                    top: 80px;
+
+                    .product-range-container{
+                        display: flex;
+
+                        .product-container{
+                            width: calc(100% / 3 - 10px);
+
+                            .product{
+                                height: 350px;
+
+                                h3{
+                                    font-size: 26px;
+                                    line-height: 26px;
+                                    padding: 10px 0 5px;
+
+                                    &:before{
+                                        width: 120%;
+                                        height: 250px;
+                                        left: -13px;
+                                        top: -1px;
+                                    }
+                                }
+
+                                .copy{
+                                    
+                                    p{
+                                        display: none;
+                                    }
+
+                                    a{
+
+                                        &.cta{
+                                            width: 200px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -153,6 +229,17 @@
 
         #menu{
             width: 600px;
+
+            #products-dropdown{
+
+                .product-range{
+                    
+                    .product-range-container{
+                        max-width: 1000px;
+                        margin: auto;
+                    }
+                }
+            }
         }
     }
 }

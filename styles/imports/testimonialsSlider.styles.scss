@@ -43,7 +43,7 @@
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
-                height: 370px;
+                height: 420px;
                 
                 &::-webkit-scrollbar {
                     width: 10px;
@@ -65,7 +65,7 @@
                     scroll-snap-align: start;
                     flex-shrink: 0;
                     width: 98%;
-                    height: 350px;
+                    height: 380px;
                     margin-right: 50px;
                     margin-bottom: 10px;
                     border-radius: 20px;
